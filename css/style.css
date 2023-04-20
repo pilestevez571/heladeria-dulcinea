@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,200&family=Inter:wght@200&display=swap');
+
+/* CSS GENERAL */
+
+/* HEADER */
+header {background-color: #E7FDBB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {width: 280px;
+    height: 200px;
+
+}
+
+li {font-family: 'Inter', sans-serif;
+
+}
+
+.navbar {list-style: none;
+    padding-top: 70px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    top: 70px;
+    left: 650px;
+    font-size: 23px;
+    color: #5F694D;
+
+}
+
+a {color: #5F694D;
+text-decoration: none;
+
+}
+
+/* FOOTER */
+
+footer {background-color: #E7FDBB;
+    height: 200px;
+}
+
+.redes {display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 70px; 
+}
+
+/* INDEX */
+
+main {background-color: white;}
+
+h1 {font-family: 'IBM Plex Mono', monospace;
+color: #5F694D;
+display: flex;
+font-weight: lighter;
+justify-content: center;
+padding: 10px;
+margin: 40px;
+}
+
+.sectionindex {background-color: #E7FDBB;
+display: flex;
+justify-content: space-between;
+margin-bottom: 200px;}
+
+.textochico {font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #5F694D;
+    padding: 80px;
+}
+
+.textogrande {font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: #5F694D;
+    padding: 60px;
+}
+
+/* SABORES */
+
+.mainsabores {background-color: white;
+}
+
+dt {font-family: 'Inter', sans-serif;
+font-size: larger;
+padding: 10px;
+margin: 10px;}
+
+dd {font-family: 'Inter', sans-serif;
+padding: 10px;
+line-height: 25px;
+}
+
+/* NOSOTROS */
+
+.textonosotros {font-family: 'Inter', sans-serif;
+    line-height: 40px;
+    background-color: #5F694D;
+    width: fit-content;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    margin: 20px;
+}
+
+.textoyfoto {display: flex;}
+
+/* RESEÑAS */
+
+.sectionreseñas {background-image: url(../assets/img/fotoreseña.jpg);
+background-size: cover;
+height: 600px;
+margin-bottom: 200px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(8,1fr);
+}
+
+.reseñas {background-color:#5F694D;
+margin: 20px;
+font-family: 'Inter', sans-serif;
+padding: 30px;
+border-radius: 20px;
+grid-row: 3/7;
+}
+
+/* CONTACTO */
+
+
+.maincontacto {background-color: white;}
+
+
+span {font-family: 'Inter', sans-serif}
+
+form {background-color: white;}
+
+.textoymapa {display: flex;
+justify-content: space-between;
+font-family: 'Inter', sans-serif;
+font-size: 35px;
+padding: 70px;}
+
+.sectioncontacto {display: flex;
+justify-content: space-between;}
