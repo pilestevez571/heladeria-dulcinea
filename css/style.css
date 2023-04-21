@@ -54,6 +54,8 @@ footer {background-color: #E7FDBB;
     padding-top: 70px; 
 }
 
+
+
 /* INDEX */
 
 main {background-color: white;}
@@ -74,14 +76,14 @@ margin-bottom: 200px;}
 
 .textochico {font-family: 'Inter', sans-serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: #5F694D;
-    padding: 80px;
+    padding: 70px;
 }
 
 .textogrande {font-family: 'Inter', sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 45px;
     color: #5F694D;
     padding: 60px;
 }
@@ -118,21 +120,38 @@ line-height: 25px;
 
 /* RESEÑAS */
 
-.sectionreseñas {background-image: url(../assets/img/fotoreseña.jpg);
+.sectionresenas {background-image: url(../assets/img/fotoreseña.jpg);
 background-size: cover;
 height: 600px;
 margin-bottom: 200px;
 display: grid;
-grid-template-columns: repeat(3,1fr);
+grid-template-columns: repeat(10,1fr);
 grid-template-rows: repeat(8,1fr);
 }
 
-.reseñas {background-color:#5F694D;
-margin: 20px;
-font-family: 'Inter', sans-serif;
+.resenas {background-color: #aebf8e;
+margin:20px;
+font-family: "Inter", sans-serif;
 padding: 30px;
 border-radius: 20px;
-grid-row: 3/7;
+grid-row: 2/8;
+text-align: center;
+font-size: 20px;
+}
+.autoresresenas {font-style: italic;
+    text-decoration: underline;
+padding-top: 10px;
+}
+
+
+.resena1 {grid-column: 2/4;
+}
+
+.resena2 {grid-column: 5/7;
+    font-size: 18px;
+}
+
+.resena3 {grid-column: 8/10;
 }
 
 /* CONTACTO */
