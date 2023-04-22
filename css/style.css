@@ -10,31 +10,28 @@
 
 /* HEADER */
 header {background-color: #E7FDBB;
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 .logo {width: 280px;
-    height: 200px;
-
+height: 200px;
 }
 
 li {font-family: 'Inter', sans-serif;
-
 }
 
 .navbar {list-style: none;
-    padding-top: 70px;
-    padding-right: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-    top: 70px;
-    left: 650px;
-    font-size: 23px;
-    color: #5F694D;
-
+padding-top: 70px;
+padding-right: 30px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 30px;
+top: 70px;
+left: 650px;
+font-size: 23px;
+color: #5F694D;
 }
 
 a {color: #5F694D;
@@ -129,9 +126,10 @@ grid-template-columns: repeat(10,1fr);
 grid-template-rows: repeat(8,1fr);
 }
 
-.resenas {background-color: #aebf8e;
+.resenas {background-color: #5F694D;
 margin:20px;
 font-family: "Inter", sans-serif;
+color: white;
 padding: 30px;
 border-radius: 20px;
 grid-row: 2/8;
@@ -139,7 +137,7 @@ text-align: center;
 font-size: 20px;
 }
 .autoresresenas {font-style: italic;
-    text-decoration: underline;
+text-decoration: underline;
 padding-top: 10px;
 }
 
@@ -156,19 +154,50 @@ padding-top: 10px;
 
 /* CONTACTO */
 
+.maincontacto {background-color: white;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(8,100px);
+}
 
-.maincontacto {background-color: white;}
+.titulocontacto {grid-column: 1/2;
+grid-row: 1/2;}
 
+.sectioncontacto {grid-column: 1/2;
+grid-row: 2/5;
+}
 
-span {font-family: 'Inter', sans-serif}
+.imagenlocalcontacto {grid-column: 2/3;
+grid-row: 2/5;
+padding: 0px 10px 100px 80px;
+}
 
-form {background-color: white;}
+.mapa {grid-column: 2/3;
+grid-row: 5/9;
+}
 
-.textoymapa {display: flex;
-justify-content: space-between;
+iframe {padding: 100px 50px 100px 80px;
+}
+
+span {font-family: 'Inter', sans-serif;
+margin: 20px;
+}
+
+.textocontacto {grid-column: 1/2;
+grid-row: 7/9;
 font-family: 'Inter', sans-serif;
-font-size: 35px;
-padding: 70px;}
+font-size: 20px;
+padding: 50px 0px 50px 200px;
+}
 
-.sectioncontacto {display: flex;
-justify-content: space-between;}
+.botonenviar {padding: 20px;
+font-size: 15px;
+}
+
+input {margin: 20px;}
+
+#Mensaje {padding: 80px;}
+
+fieldset {border: none;}
+
+label {color: #5F694D;}
