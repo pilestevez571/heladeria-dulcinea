@@ -105,34 +105,51 @@ grid-template-areas:
 margin: 20px;
 padding: 100px;
 align-items: first baseline; 
-
 }
 
 .sabores {width: 400px;
 height: 400px;
+padding: 20px;
 }
 
 h3 {color: #5F694D;
 font-family: 'IBM Plex Mono', monospace;
 font-weight: lighter;
+padding-left: 20px;
 }
 
 ul {list-style: none;
 font-family: 'Inter', sans-serif;
-line-height: 25px;}
+line-height: 25px;
+padding-left: 20px;}
 
 .cardcremas {grid-area: cremas;
+padding: 0px 0px 10px 20px;
+background-color: #E7FDBB;
+border-radius: 20px;
 }
 
-.cardfrutlaes {grid-area: frutales;
-padding-left: 20px;
+.cardfrutales {grid-area: frutales;
+padding: 0px 0px 10px 20px;
+background-color: #E7FDBB;
+border-radius: 20px;
+margin-left: 20px;
 }
 
 .cardsinazucar {grid-area: sinazucar;
-padding-top: 50px;}
+background-color: #E7FDBB;
+border-radius: 20px;
+margin-top: 20px;
+padding-bottom: 10px;
+}
 
 .cardespeciales {grid-area: especiales;
-padding-top: 50px;}
+background-color: #E7FDBB;
+border-radius: 20px;
+margin-top: 20px;
+margin-left: 20px;
+padding-bottom: 10px;
+}
 
 /* NOSOTROS */
 
