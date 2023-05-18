@@ -1,0 +1,64 @@
+.mainsabores {
+    background-color: white;
+
+    .sectionsabores {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "cremas frutales "
+        "sinazucar especiales";
+        margin: 20px;
+        padding: 100px;
+        align-items: center;
+
+
+        .cardcremas, .cardfrutales, .cardsinazucar, .cardespeciales {
+            grid-area: cremas;
+            background-color: #E7FDBB;
+            width: 450px;
+            height: 780px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
+                width: 400px;
+                height: 400px;
+                padding: 20px;
+                justify-items: center;
+            }
+
+            h3 {
+                color: #5F694D;
+                font-family: 'IBM Plex Mono', monospace;
+                font-weight: lighter;
+                padding-left: 20px;
+                
+            }
+
+            ul {
+                list-style: none;
+                font-family: 'Inter', sans-serif;
+                line-height: 25px;
+                padding-left: 20px;
+            }
+            
+        }        
+
+        .cardfrutales {
+            grid-area: frutales;
+        }
+    
+        .cardsinazucar {
+            grid-area: sinazucar;
+            margin-top: 20px;
+        }
+    
+        .cardespeciales {
+            grid-area: especiales;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,73 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Inter:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,200&family=Inter:wght@200&display=swap');
+header {
+  background-color: #E7FDBB;
+  display: flex;
+  justify-content: space-between; }
+  header .logo {
+    width: 280px;
+    height: 200px; }
+  header .navbar {
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    padding-top: 70px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 23px;
+    color: #5F694D; }
+  header a {
+    color: #5F694D;
+    text-decoration: none; }
 
-/* CSS GENERAL */
+footer {
+  background-color: #E7FDBB;
+  height: 200px; }
+  footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 70px; }
 
-/* HEADER */
-header {background-color: #E7FDBB;
-display: flex;
-justify-content: space-between;
-}
+main {
+  background-color: white; }
+  main h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #5F694D;
+    display: flex;
+    font-weight: lighter;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px; }
 
-.logo {width: 280px;
-height: 200px;
-}
-
-.navbar {font-family: 'Inter', sans-serif;
-list-style: none;
-padding-top: 70px;
-padding-right: 30px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-gap: 30px;
-font-size: 23px;
-color: #5F694D;
-}
-
-a {color: #5F694D;
-text-decoration: none;
-
-}
-
-/* FOOTER */
-
-footer {background-color: #E7FDBB;
-height: 200px;
-}
-
-.redes {display: flex;
-justify-content: center;
-gap: 100px;
-padding-top: 70px; 
-}
-
-
-/* INDEX */
-
-main {background-color: white;}
-
-h1 {font-family: 'IBM Plex Mono', monospace;
-color: #5F694D;
-display: flex;
-font-weight: lighter;
-justify-content: center;
-margin-top: 40px;
-margin-bottom: 40px;
-}
-
-.sectionindex {background-image: url(../assets/img/index.jpg);
-display: grid;
-height: 900px;
-grid-template-rows: repeat(6,1fr);
-grid-template-columns: repeat(6,1fr)}
-
-.textochico {grid-column: 2/6;
+.sectionindex {
+  background-image: url(../assets/img/index.jpg);
+  display: grid;
+  height: 900px;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr); }
+  .sectionindex .textochico {
+    grid-column: 2/6;
     grid-row: 2/6;
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -75,269 +62,231 @@ grid-template-columns: repeat(6,1fr)}
     font-size: 45px;
     color: #5F694D;
     background-color: rgba(255, 255, 255, 0.658);
-    padding: 20px;
-}
+    padding: 20px; }
 
-.sectionindex2 {display: flex;
-justify-content: center;
-flex-wrap: wrap;
-margin-bottom: 200px;}
-
-.textogrande {
+.sectionindex2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 200px; }
+  .sectionindex2 .textogrande {
     font-family: 'Inter', sans-serif;
     text-align: center;
     font-size: 40px;
     color: #5F694D;
-    padding: 70px;
-}
+    padding: 70px; }
 
-/* SABORES */
+.sectionresenas {
+  background-image: url(../assets/img/fotoreseña.jpg);
+  background-size: cover;
+  height: 600px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr); }
+  .sectionresenas .resena1, .sectionresenas .resena2, .sectionresenas .resena3 {
+    background-color: #5F694D;
+    margin: 15px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    grid-row: 2/8;
+    text-align: center;
+    font-size: 20px;
+    align-items: center; }
+    .sectionresenas .resena1 .autoresresenas, .sectionresenas .resena2 .autoresresenas, .sectionresenas .resena3 .autoresresenas {
+      font-style: italic;
+      text-decoration: underline;
+      padding-top: 10px; }
+  .sectionresenas .resena1 {
+    grid-column: 2/4; }
+  .sectionresenas .resena2 {
+    grid-column: 5/7;
+    font-size: 18px; }
+  .sectionresenas .resena3 {
+    grid-column: 8/10; }
 
-.mainsabores {background-color: white;
-}
+.h2resenas {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #5F694D;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  margin-bottom: 80px; }
+  .h2resenas .anclaresenas {
+    margin-left: 10px; }
 
-.sectionsabores {display: grid;
-grid-template-columns: repeat(2,1fr);
-grid-template-rows: repeat(2,1fr);
-grid-template-areas: 
-"cremas frutales "
-"sinazucar especiales";
-margin: 20px;
-padding: 100px;
-align-items: first baseline; 
-}
+.mainnosotros {
+  display: flex;
+  flex-direction: column; }
 
-.sabores {width: 400px;
-height: 400px;
-padding: 20px;
-}
+.textonosotros1 {
+  background-color: #5F694D; }
 
-h3 {color: #5F694D;
-font-family: 'IBM Plex Mono', monospace;
-font-weight: lighter;
-padding-left: 20px;
-}
+.textonosotros2 {
+  background-color: #5F694D;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-ul {list-style: none;
-font-family: 'Inter', sans-serif;
-line-height: 25px;
-padding-left: 20px;}
+.maincontacto {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 100px); }
+  .maincontacto .titulocontacto {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .maincontacto .sectioncontacto {
+    grid-column: 1/2;
+    grid-row: 2/5; }
+    .maincontacto .sectioncontacto fieldset {
+      border: none; }
+      .maincontacto .sectioncontacto fieldset label {
+        color: #5F694D; }
+        .maincontacto .sectioncontacto fieldset label span {
+          font-family: 'Inter', sans-serif;
+          margin: 20px; }
+        .maincontacto .sectioncontacto fieldset label input {
+          margin: 20px; }
+        .maincontacto .sectioncontacto fieldset label #Mensaje {
+          padding: 80px; }
+    .maincontacto .sectioncontacto .botonenviar {
+      padding: 20px;
+      font-size: 15px; }
+  .maincontacto .imagenlocalcontacto {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    padding: 0px 10px 100px 80px; }
+  .maincontacto .mapa {
+    grid-column: 2/3;
+    grid-row: 5/9; }
+    .maincontacto .mapa iframe {
+      padding: 100px 50px 100px 80px; }
+  .maincontacto .textocontacto {
+    grid-column: 1/2;
+    grid-row: 7/9;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    padding: 50px 0px 50px 200px; }
 
-.cardcremas {grid-area: cremas;
-padding: 0px 0px 10px 20px;
-background-color: #E7FDBB;
-border-radius: 20px;
-}
+.mainsabores {
+  background-color: white; }
+  .mainsabores .sectionsabores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "cremas frutales " "sinazucar especiales";
+    margin: 20px;
+    padding: 100px;
+    align-items: center; }
+    .mainsabores .sectionsabores .cardcremas, .mainsabores .sectionsabores .cardfrutales, .mainsabores .sectionsabores .cardsinazucar, .mainsabores .sectionsabores .cardespeciales {
+      grid-area: cremas;
+      background-color: #E7FDBB;
+      width: 450px;
+      height: 780px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .mainsabores .sectionsabores .cardcremas img, .mainsabores .sectionsabores .cardfrutales img, .mainsabores .sectionsabores .cardsinazucar img, .mainsabores .sectionsabores .cardespeciales img {
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+        justify-items: center; }
+      .mainsabores .sectionsabores .cardcremas h3, .mainsabores .sectionsabores .cardfrutales h3, .mainsabores .sectionsabores .cardsinazucar h3, .mainsabores .sectionsabores .cardespeciales h3 {
+        color: #5F694D;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: lighter;
+        padding-left: 20px; }
+      .mainsabores .sectionsabores .cardcremas ul, .mainsabores .sectionsabores .cardfrutales ul, .mainsabores .sectionsabores .cardsinazucar ul, .mainsabores .sectionsabores .cardespeciales ul {
+        list-style: none;
+        font-family: 'Inter', sans-serif;
+        line-height: 25px;
+        padding-left: 20px; }
+    .mainsabores .sectionsabores .cardfrutales {
+      grid-area: frutales; }
+    .mainsabores .sectionsabores .cardsinazucar {
+      grid-area: sinazucar;
+      margin-top: 20px; }
+    .mainsabores .sectionsabores .cardespeciales {
+      grid-area: especiales;
+      margin-top: 20px; }
 
-.cardfrutales {grid-area: frutales;
-padding: 0px 0px 10px 20px;
-background-color: #E7FDBB;
-border-radius: 20px;
-margin-left: 20px;
-}
+@media (max-width: 375px) {
+  .logoredes {
+    width: 47px;
+    height: 54px; }
+  .imgnosotros {
+    width: 300px;
+    height: 308px; } }
 
-.cardsinazucar {grid-area: sinazucar;
-background-color: #E7FDBB;
-border-radius: 20px;
-margin-top: 20px;
-padding-bottom: 10px;
-}
+@media (max-width: 425px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center; }
+  .logo {
+    width: 235px;
+    height: 190px; }
+  h1 {
+    font-size: 15px; }
+  .sectionindex {
+    background-position: center center; }
+    .sectionindex .textochico {
+      font-size: 20px; }
+  .textogrande {
+    font-size: 20px; }
+  .logoredes {
+    width: 67px;
+    height: 74px; }
+  .imgnosotros {
+    width: 320px;
+    height: 328px; } }
 
-.cardespeciales {grid-area: especiales;
-background-color: #E7FDBB;
-border-radius: 20px;
-margin-top: 20px;
-margin-left: 20px;
-padding-bottom: 10px;
-}
-
-/* NOSOTROS */
-
-.textonosotros1 {background-color: #5F694D;}
-
-.textonosotros2 {background-color: #5F694D;}
-
-/* RESEÑAS */
-
-.sectionresenas {background-image: url(../assets/img/fotoreseña.jpg);
-background-size: cover;
-height: 600px;
-margin-bottom: 200px;
-display: grid;
-grid-template-columns: repeat(10,1fr);
-grid-template-rows: repeat(8,1fr);
-}
-
-.resenas {background-color: #5F694D;
-margin:20px;
-font-family: "Inter", sans-serif;
-color: white;
-padding: 30px;
-border-radius: 20px;
-grid-row: 2/8;
-text-align: center;
-font-size: 20px;
-}
-.autoresresenas {font-style: italic;
-text-decoration: underline;
-padding-top: 10px;
-}
-
-
-.resena1 {grid-column: 2/4;
-}
-
-.resena2 {grid-column: 5/7;
-font-size: 18px;
-}
-
-.resena3 {grid-column: 8/10;
-}
-
-.h2resenas {font-family: 'IBM Plex Mono', monospace;
-color: #5F694D;
-font-weight: lighter;
-display: flex;
-justify-content: center;
-margin-top: -80px;
-margin-bottom: 80px;
-}
-
-.anclaresenas {margin-left: 10px;}
-
-
-/* CONTACTO */
-
-.maincontacto {background-color: white;
-display: grid;
-grid-template-columns: repeat(2,1fr);
-grid-template-rows: repeat(8,100px);
-}
-
-.titulocontacto {grid-column: 1/2;
-grid-row: 1/2;}
-
-.sectioncontacto {grid-column: 1/2;
-grid-row: 2/5;
-}
-
-.imagenlocalcontacto {grid-column: 2/3;
-grid-row: 2/5;
-padding: 0px 10px 100px 80px;
-}
-
-.mapa {grid-column: 2/3;
-grid-row: 5/9;
-}
-
-iframe {padding: 100px 50px 100px 80px;
-}
-
-span {font-family: 'Inter', sans-serif;
-margin: 20px;
-}
-
-.textocontacto {grid-column: 1/2;
-grid-row: 7/9;
-font-family: 'Inter', sans-serif;
-font-size: 20px;
-padding: 50px 0px 50px 200px;
-}
-
-.botonenviar {padding: 20px;
-font-size: 15px;
-}
-
-input {margin: 20px;}
-
-#Mensaje {padding: 80px;}
-
-fieldset {border: none;}
-
-label {color: #5F694D;}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+    text-align: center; }
+  .navbar {
+    font-size: 15px;
+    gap: 15px;
+    flex-wrap: wrap; }
+  .sectionindex {
+    background-position: center center; }
+  .textochico {
+    grid-column: 2/6;
+    grid-row: 2/5;
+    font-size: 30px;
+    padding: 10px;
+    align-self: center;
+    padding: 20px; }
+  .textogrande {
+    font-size: 25px; }
+  .redes {
+    gap: 50px; }
+  .imgnosotros {
+    width: 425px;
+    height: 432px; } }
 
 @media (max-width: 1024px) {
-        header {display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-
-        .logo {display: flex;
-        justify-content: center;
-        }
-
-        .navbar {display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: -50px;
-        margin-bottom: 20px;
-        }
-
-        .textochico {font-size: 40px;}
-
-        .textogrande {font-size: 38px;}
-
-}
-
-    @media (max-width: 768px) {
-
-        h1 {font-size: 25px;
-        text-align: center;}
-        .navbar {font-size: 15px;
-        gap: 15px;
-        flex-wrap: wrap;}
-            
-        .sectionindex {background-position: center center;}
-    
-        .textochico {grid-column: 2/6;
-        grid-row: 2/5;
-        font-size: 30px;
-        padding: 10px;
-        align-self: center;
-        padding: 20px;
-        }
-        
-        .textogrande {font-size: 25px;
-        }
-
-        .redes {gap: 50px;
-        }
-
-        .imgnosotros {width: 425px;
-        height: 432px;}
-    }
-
-
-    @media (max-width: 425px) {
-
-        .navbar {flex-direction: column;
-        text-align: center;}
-
-        .logo{width: 235px;
-        height: 190px;}
-
-        h1 {font-size: 15px}
-
-        .sectionindex {background-position: center center;}
-
-        .textochico {font-size: 20px;}
-
-        .textogrande {font-size: 20px;}
-
-        .logoredes {width: 67px;
-        height: 74px;}
-
-        .imgnosotros {width: 380px;
-            height: 388px;}
-            
-    }
-
-    @media (max-width: 375px) {
-        .logoredes {width: 47px;
-        height: 54px;}
-
-        .imgnosotros {width: 300px;
-            height: 308px;}
-
-    }
-
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .logo {
+    display: flex;
+    justify-content: center; }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -50px;
+    margin-bottom: 20px; }
+  .textochico {
+    font-size: 40px; }
+  .textogrande {
+    font-size: 38px; }
+  .cardcremas, .cardfrutales, .cardsinazucar, .cardespeciales {
+    width: 50%; } }

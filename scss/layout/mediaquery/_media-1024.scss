@@ -1,0 +1,32 @@
+@media (max-width: 1024px) {
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    .textochico {
+        font-size: 40px;}
+
+    .textogrande {
+        font-size: 38px;}
+
+        .cardcremas, .cardfrutales, .cardsinazucar, .cardespeciales {
+            width:50%;
+            
+        }
+}

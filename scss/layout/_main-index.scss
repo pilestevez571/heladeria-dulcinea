@@ -1,0 +1,46 @@
+main {background-color: white;
+
+        h1 {font-family: 'IBM Plex Sans', sans-serif;
+        color: #5F694D;
+        display: flex;
+        font-weight: lighter;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        }
+}
+
+
+
+.sectionindex {background-image: url(../assets/img/index.jpg);
+        display: grid;
+        height: 900px;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-columns: repeat(6,1fr);
+
+        .textochico {grid-column: 2/6;
+                grid-row: 2/6;
+                font-family: 'Inter', sans-serif;
+                text-align: center;
+                align-self: center;
+                font-size: 45px;
+                color: #5F694D;
+                background-color: rgba(255, 255, 255, 0.658);
+                padding: 20px;
+                }
+}
+
+
+.sectionindex2 {display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 200px;
+
+        .textogrande {font-family: 'Inter', sans-serif;
+                text-align: center;
+                font-size: 40px;
+                color: #5F694D;
+                padding: 70px;
+                }
+}
+

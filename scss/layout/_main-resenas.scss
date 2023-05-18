@@ -1,0 +1,57 @@
+.sectionresenas {
+    background-image: url(../assets/img/fotoreseña.jpg);
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+    
+    
+    .resena1, .resena2, .resena3 {
+        background-color: #5F694D;
+        margin:15px;
+        font-family: "Inter", sans-serif;
+        color: white;
+        padding: 30px;
+        border-radius: 20px;
+        grid-row: 2/8;
+        text-align: center;
+        font-size: 20px;
+        align-items: center;
+
+            .autoresresenas {
+                font-style: italic;
+                text-decoration: underline;
+                padding-top: 10px;
+            }
+    }
+    .resena1 {
+        grid-column: 2/4;
+    }
+    
+    .resena2 {
+        grid-column: 5/7;
+        font-size: 18px;
+    }
+    
+    .resena3 {
+        grid-column: 8/10;
+    }
+}
+    
+.h2resenas {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #5F694D;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    margin-bottom: 80px;
+
+    .anclaresenas {
+        margin-left: 10px;
+    }
+}
+    
+    

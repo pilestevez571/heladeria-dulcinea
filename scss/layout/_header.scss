@@ -1,0 +1,25 @@
+header {background-color: #E7FDBB;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {width: 280px;
+        height: 200px;
+        }
+
+        .navbar {font-family: 'Inter', sans-serif;
+            list-style: none;
+            padding-top: 70px;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+            font-size: 23px;
+            color: #5F694D;
+        }
+
+            a {color: #5F694D;
+                text-decoration: none;
+            }
+
+    }

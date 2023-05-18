@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .navbar {
+        font-size: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+        
+    .sectionindex {
+        background-position: center center;
+    }
+
+    .textochico {
+        grid-column: 2/6;
+        grid-row: 2/5;
+        font-size: 30px;
+        padding: 10px;
+        align-self: center;
+        padding: 20px;
+    }
+    
+    .textogrande {
+        font-size: 25px;
+    }
+
+    .redes {
+        gap: 50px;
+    }
+
+    .imgnosotros {
+        width: 425px;
+        height: 432px;}
+}

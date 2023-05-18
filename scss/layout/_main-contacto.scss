@@ -1,0 +1,88 @@
+
+.maincontacto {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(8,100px);
+
+    .titulocontacto {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        }
+
+    .sectioncontacto {
+        grid-column: 1/2;
+        grid-row: 2/5;
+        
+        fieldset {
+            border: none;
+            
+            label {
+                color: #5F694D;
+
+                span {
+                    font-family: 'Inter', sans-serif;
+                    margin: 20px;
+                }
+
+                input {
+                    margin: 20px;
+                }
+
+                #Mensaje {
+                    padding: 80px;
+                }
+            }
+        }
+
+        .botonenviar {
+            padding: 20px;
+            font-size: 15px;
+        }
+    }
+            
+    .imagenlocalcontacto {
+        grid-column: 2/3;
+        grid-row: 2/5;
+        padding: 0px 10px 100px 80px;
+    }
+
+    .mapa {
+        grid-column: 2/3;
+        grid-row: 5/9;
+
+        iframe {
+            padding: 100px 50px 100px 80px;
+        }
+    }
+                    
+    .textocontacto {
+        grid-column: 1/2;
+        grid-row: 7/9;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        padding: 50px 0px 50px 200px;
+    }   
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    

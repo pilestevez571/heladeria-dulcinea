@@ -1,0 +1,33 @@
+@media (max-width: 425px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;}
+
+    .logo{
+        width: 235px;
+        height: 190px;}
+
+    h1 {
+        font-size: 15px}
+
+    .sectionindex {
+        background-position: center center;
+        
+        .textochico {
+            font-size: 20px;
+        }
+    }
+
+    .textogrande {
+        font-size: 20px;}
+
+    .logoredes {
+        width: 67px;
+        height: 74px;}
+
+    .imgnosotros {
+        width: 320px;
+        height: 328px;}
+        
+}
