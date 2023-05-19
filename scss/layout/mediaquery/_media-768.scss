@@ -1,16 +1,16 @@
 @media (max-width: 768px) {
-
+    
+    header { 
+        .navbar {
+        font-size: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+        }
+    }
     h1 {
         font-size: 25px;
         text-align: center;
     }
-    
-    .navbar {
-        font-size: 15px;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-        
     .sectionindex {
         background-position: center center;
     }
@@ -35,4 +35,18 @@
     .imgnosotros {
         width: 425px;
         height: 432px;}
+
+    .mainsabores {
+        .sectionsabores {
+            .cardcremas, .cardfrutales, .cardsinazucar, .cardespeciales { 
+                width: 350px;
+                height: 780px;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }    
 }

@@ -23,10 +23,40 @@
         font-size: 40px;}
 
     .textogrande {
-        font-size: 38px;}
+        font-size: 38px;
+    }
 
-        .cardcremas, .cardfrutales, .cardsinazucar, .cardespeciales {
-            width:50%;
-            
-        }
+    .mainsabores {
+        .sectionsabores {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,700px);
+            justify-items: center;
+            align-items: center;
+
+            .cardcremas, .cardfrutales, .cardsinazucar, .cardespeciales { 
+                width: 420px;
+                height: 700px;
+
+            }
+
+            .cardcremas {
+                grid-column: 1;
+                grid-row: 1/2; 
+            }
+            .cardfrutales {
+                grid-column: 1;
+                grid-row: 2/3;
+            }
+            .cardsinazucar {
+                grid-column: 1;
+                grid-row: 3/4;
+            }
+            .cardespeciales {
+                grid-column: 1;
+                grid-row: 4/5;                
+            }
+        }    
+    }
+    
 }

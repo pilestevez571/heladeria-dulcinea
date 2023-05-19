@@ -29,7 +29,8 @@ header {
 
 footer {
   background-color: #E7FDBB;
-  height: 200px; }
+  height: 200px;
+  margin-top: 100px; }
   footer .redes {
     display: flex;
     justify-content: center;
@@ -177,25 +178,18 @@ main {
   .mainsabores .sectionsabores {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "cremas frutales " "sinazucar especiales";
-    margin: 20px;
-    padding: 100px;
-    align-items: center; }
+    grid-template-rows: repeat(2, 780px);
+    gap: 20px;
+    justify-items: center; }
     .mainsabores .sectionsabores .cardcremas, .mainsabores .sectionsabores .cardfrutales, .mainsabores .sectionsabores .cardsinazucar, .mainsabores .sectionsabores .cardespeciales {
-      grid-area: cremas;
       background-color: #E7FDBB;
       width: 450px;
       height: 780px;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
+      border-radius: 20px; }
       .mainsabores .sectionsabores .cardcremas img, .mainsabores .sectionsabores .cardfrutales img, .mainsabores .sectionsabores .cardsinazucar img, .mainsabores .sectionsabores .cardespeciales img {
         width: 400px;
         height: 400px;
-        padding: 20px;
-        justify-items: center; }
+        padding: 20px; }
       .mainsabores .sectionsabores .cardcremas h3, .mainsabores .sectionsabores .cardfrutales h3, .mainsabores .sectionsabores .cardsinazucar h3, .mainsabores .sectionsabores .cardespeciales h3 {
         color: #5F694D;
         font-family: 'IBM Plex Mono', monospace;
@@ -206,22 +200,91 @@ main {
         font-family: 'Inter', sans-serif;
         line-height: 25px;
         padding-left: 20px; }
+    .mainsabores .sectionsabores .cardcremas {
+      grid-column: 1/2;
+      grid-row: 1/2; }
     .mainsabores .sectionsabores .cardfrutales {
-      grid-area: frutales; }
+      grid-column: 2/3;
+      grid-row: 1/2; }
     .mainsabores .sectionsabores .cardsinazucar {
-      grid-area: sinazucar;
+      grid-column: 1/2;
+      grid-row: 2/3;
       margin-top: 20px; }
     .mainsabores .sectionsabores .cardespeciales {
-      grid-area: especiales;
+      grid-column: 2/3;
+      grid-row: 2/3;
       margin-top: 20px; }
 
-@media (max-width: 375px) {
-  .logoredes {
-    width: 47px;
-    height: 54px; }
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .logo {
+    display: flex;
+    justify-content: center; }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -50px;
+    margin-bottom: 20px; }
+  .textochico {
+    font-size: 40px; }
+  .textogrande {
+    font-size: 38px; }
+  .mainsabores .sectionsabores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 700px);
+    justify-items: center;
+    align-items: center; }
+    .mainsabores .sectionsabores .cardcremas, .mainsabores .sectionsabores .cardfrutales, .mainsabores .sectionsabores .cardsinazucar, .mainsabores .sectionsabores .cardespeciales {
+      width: 420px;
+      height: 700px; }
+    .mainsabores .sectionsabores .cardcremas {
+      grid-column: 1;
+      grid-row: 1/2; }
+    .mainsabores .sectionsabores .cardfrutales {
+      grid-column: 1;
+      grid-row: 2/3; }
+    .mainsabores .sectionsabores .cardsinazucar {
+      grid-column: 1;
+      grid-row: 3/4; }
+    .mainsabores .sectionsabores .cardespeciales {
+      grid-column: 1;
+      grid-row: 4/5; } }
+
+@media (max-width: 768px) {
+  header .navbar {
+    font-size: 15px;
+    gap: 15px;
+    flex-wrap: wrap; }
+  h1 {
+    font-size: 25px;
+    text-align: center; }
+  .sectionindex {
+    background-position: center center; }
+  .textochico {
+    grid-column: 2/6;
+    grid-row: 2/5;
+    font-size: 30px;
+    padding: 10px;
+    align-self: center;
+    padding: 20px; }
+  .textogrande {
+    font-size: 25px; }
+  .redes {
+    gap: 50px; }
   .imgnosotros {
-    width: 300px;
-    height: 308px; } }
+    width: 425px;
+    height: 432px; }
+  .mainsabores .sectionsabores .cardcremas, .mainsabores .sectionsabores .cardfrutales, .mainsabores .sectionsabores .cardsinazucar, .mainsabores .sectionsabores .cardespeciales {
+    width: 350px;
+    height: 780px; }
+    .mainsabores .sectionsabores .cardcremas img, .mainsabores .sectionsabores .cardfrutales img, .mainsabores .sectionsabores .cardsinazucar img, .mainsabores .sectionsabores .cardespeciales img {
+      width: 300px;
+      height: 300px; } }
 
 @media (max-width: 425px) {
   .navbar {
@@ -245,48 +308,20 @@ main {
     width: 320px;
     height: 328px; } }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 25px;
-    text-align: center; }
-  .navbar {
-    font-size: 15px;
-    gap: 15px;
-    flex-wrap: wrap; }
-  .sectionindex {
-    background-position: center center; }
-  .textochico {
-    grid-column: 2/6;
-    grid-row: 2/5;
-    font-size: 30px;
-    padding: 10px;
-    align-self: center;
-    padding: 20px; }
-  .textogrande {
-    font-size: 25px; }
-  .redes {
-    gap: 50px; }
+@media (max-width: 375px) {
+  .logoredes {
+    width: 47px;
+    height: 54px; }
   .imgnosotros {
-    width: 425px;
-    height: 432px; } }
-
-@media (max-width: 1024px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .logo {
-    display: flex;
-    justify-content: center; }
-  .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: -50px;
-    margin-bottom: 20px; }
-  .textochico {
-    font-size: 40px; }
-  .textogrande {
-    font-size: 38px; }
-  .cardcremas, .cardfrutales, .cardsinazucar, .cardespeciales {
-    width: 50%; } }
+    width: 300px;
+    height: 308px; }
+  .mainsabores .sectionsabores {
+    display: grid;
+    grid-template-rows: repeat(4, 530px); }
+    .mainsabores .sectionsabores .cardcremas, .mainsabores .sectionsabores .cardfrutales, .mainsabores .sectionsabores .cardsinazucar, .mainsabores .sectionsabores .cardespeciales {
+      width: 250px;
+      height: 500px;
+      gap: 20px; }
+      .mainsabores .sectionsabores .cardcremas img, .mainsabores .sectionsabores .cardfrutales img, .mainsabores .sectionsabores .cardsinazucar img, .mainsabores .sectionsabores .cardespeciales img {
+        width: 200px;
+        height: 200px; } }
