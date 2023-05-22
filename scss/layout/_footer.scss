@@ -1,11 +1,12 @@
 footer {
-    background-color: #E7FDBB;
+    background-color: $paletadecolor2;
     height: 200px;
     margin-top: 100px;
     
-        .redes {display: flex;
-                justify-content: center;
-                gap: 40px;
-                padding-top: 70px; 
-                }
+        .redes {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding-top: 70px; 
+        }
 }

@@ -9,7 +9,7 @@
     
     
     .resena1, .resena2, .resena3 {
-        background-color: #5F694D;
+        background-color: $paletadecolor1;
         margin:15px;
         font-family: "Inter", sans-serif;
         color: white;
@@ -42,7 +42,7 @@
     
 .h2resenas {
     font-family: 'IBM Plex Mono', monospace;
-    color: #5F694D;
+    color: $paletadecolor1;
     font-weight: lighter;
     display: flex;
     justify-content: center;
@@ -53,5 +53,3 @@
         margin-left: 10px;
     }
 }
-    
-    

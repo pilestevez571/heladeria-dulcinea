@@ -23,9 +23,11 @@ header {
     gap: 30px;
     font-size: 23px;
     color: #5F694D; }
-  header a {
-    color: #5F694D;
-    text-decoration: none; }
+    header .navbar a {
+      color: #5F694D;
+      text-decoration: none; }
+      header .navbar a:hover {
+        color: white; }
 
 footer {
   background-color: #E7FDBB;

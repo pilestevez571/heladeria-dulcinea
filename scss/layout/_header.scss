@@ -1,25 +1,31 @@
-header {background-color: #E7FDBB;
+header {
+    background-color: $paletadecolor2;
     display: flex;
     justify-content: space-between;
 
-    .logo {width: 280px;
+    .logo {
+        width: 280px;
         height: 200px;
-        }
-
-        .navbar {font-family: 'Inter', sans-serif;
-            list-style: none;
-            padding-top: 70px;
-            padding-right: 30px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 30px;
-            font-size: 23px;
-            color: #5F694D;
-        }
-
-            a {color: #5F694D;
-                text-decoration: none;
-            }
-
     }
+
+    .navbar {
+        font-family: 'Inter', sans-serif;
+        list-style: none;
+        padding-top: 70px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        font-size: 23px;
+        color: $paletadecolor1;
+
+            a {
+                color: $paletadecolor1;
+                text-decoration: none;
+                    &:hover {
+                        color: white;
+                    }
+            }
+    }
+}

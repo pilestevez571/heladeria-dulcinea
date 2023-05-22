@@ -9,7 +9,7 @@
         justify-items: center;
 
         .cardcremas, .cardfrutales, .cardsinazucar, .cardespeciales {
-            background-color: #E7FDBB;
+            background-color: $paletadecolor2;
             width: 450px;
             height: 780px;
             border-radius: 20px;
@@ -21,7 +21,7 @@
             }
 
             h3 {
-                color: #5F694D;
+                color: $paletadecolor1;
                 font-family: 'IBM Plex Mono', monospace;
                 font-weight: lighter;
                 padding-left: 20px;

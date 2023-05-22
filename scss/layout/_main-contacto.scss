@@ -18,7 +18,7 @@
             border: none;
             
             label {
-                color: #5F694D;
+                color: $paletadecolor1;
 
                 span {
                     font-family: 'Inter', sans-serif;
@@ -55,7 +55,7 @@
             padding: 100px 50px 100px 80px;
         }
     }
-                    
+
     .textocontacto {
         grid-column: 1/2;
         grid-row: 7/9;
@@ -64,25 +64,3 @@
         padding: 50px 0px 50px 200px;
     }   
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
