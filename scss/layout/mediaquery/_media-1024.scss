@@ -59,4 +59,34 @@
         }    
     }
     
+    .sectionresenas {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(12,1fr);
+
+        .resena1, .resena2, .resena3 {
+            display: grid;
+            grid-column: 2/6;
+            margin: 0;
+            align-self: center;
+            font-size: 15px;
+            }
+    
+        .resena1 {
+            grid-row: 2/4;
+        }
+    
+        .resena2 {
+            grid-row: 6/8;
+        }
+    
+        .resena3 {
+            grid-row: 10/12;
+        }
+
+        
+    }
+
+    
+    
 }

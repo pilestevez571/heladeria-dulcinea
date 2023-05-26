@@ -10,7 +10,6 @@
     
     .resena1, .resena2, .resena3 {
         background-color: $paletadecolor1;
-        margin:15px;
         font-family: "Inter", sans-serif;
         color: white;
         padding: 30px;
@@ -18,7 +17,7 @@
         grid-row: 2/8;
         text-align: center;
         font-size: 20px;
-        align-items: center;
+        align-self: center;
 
             .autoresresenas {
                 font-style: italic;

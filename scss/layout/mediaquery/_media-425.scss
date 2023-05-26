@@ -20,14 +20,27 @@
     }
 
     .textogrande {
-        font-size: 20px;}
+        font-size: 20px;
+    }
 
     .logoredes {
         width: 67px;
-        height: 74px;}
+        height: 74px;
+    }
 
     .imgnosotros {
         width: 320px;
-        height: 328px;}
+        height: 328px;
+    }
+
+    .sectionresenas {
         
+        .resena1, .resena2, .resena3 {
+            font-size: 12px;
+        }
+    }
+
+    .h2resenas {
+        font-size: 18px;
+    }
 }
