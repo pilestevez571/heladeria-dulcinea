@@ -83,10 +83,44 @@
         .resena3 {
             grid-row: 10/12;
         }
-
-        
     }
 
+    .maincontacto {
+        display: grid;
+        grid-template-columns: auto 500px auto;
+        grid-template-rows: 100px repeat(7,1fr);
+
+        .titulocontacto {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            }
     
+        .sectioncontacto {
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+
+        .imagenlocalcontacto {
+            grid-column: 2/3;
+            grid-row: 4/6;
+            padding: 20px 0 0 0;
+        }
     
+        .mapa {
+            grid-column: 2/3;
+            grid-row: 6/8;
+
+            iframe {
+                padding: 20px 0 0 0;
+            }
+        }
+        .textocontacto {
+            grid-column: 2/3;
+            grid-row: 8/9;
+            padding: 0;
+            justify-self: center;
+            text-align: center;
+            
+        } 
+    }
 }

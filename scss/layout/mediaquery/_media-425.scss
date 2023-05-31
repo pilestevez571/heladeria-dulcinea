@@ -43,4 +43,36 @@
     .h2resenas {
         font-size: 18px;
     }
+
+    .maincontacto {
+        display: grid;
+        grid-template-columns: auto 350px auto;
+                .mapa {
+                iframe {
+                width: 330px;
+                height: 380px;
+                }
+            }
+        
+            .imagenlocalcontacto { 
+                img {
+                width: 330px;
+                height: 300px;
+                }
+            }
+
+        .sectioncontacto{
+            fieldset{
+                label{
+                    span {
+                        margin: 10px;
+                        font-size: 11px;
+                    }
+                    #Mensaje{
+                        padding: 30px;
+                    }
+                }
+            }
+        }
+    }
 }

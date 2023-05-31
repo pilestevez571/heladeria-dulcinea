@@ -145,7 +145,10 @@ main {
     grid-column: 1/2;
     grid-row: 2/5; }
     .maincontacto .sectioncontacto fieldset {
-      border: none; }
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
       .maincontacto .sectioncontacto fieldset label {
         color: #5F694D; }
         .maincontacto .sectioncontacto fieldset label span {
@@ -172,7 +175,8 @@ main {
     grid-row: 7/9;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    padding: 50px 0px 50px 200px; }
+    padding: 50px 0px 50px 200px;
+    align-self: center; }
 
 .mainsabores {
   background-color: white; }
@@ -270,7 +274,32 @@ main {
     .sectionresenas .resena2 {
       grid-row: 6/8; }
     .sectionresenas .resena3 {
-      grid-row: 10/12; } }
+      grid-row: 10/12; }
+  .maincontacto {
+    display: grid;
+    grid-template-columns: auto 500px auto;
+    grid-template-rows: 100px repeat(7, 1fr); }
+    .maincontacto .titulocontacto {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .maincontacto .sectioncontacto {
+      grid-column: 2/3;
+      grid-row: 2/4; }
+    .maincontacto .imagenlocalcontacto {
+      grid-column: 2/3;
+      grid-row: 4/6;
+      padding: 20px 0 0 0; }
+    .maincontacto .mapa {
+      grid-column: 2/3;
+      grid-row: 6/8; }
+      .maincontacto .mapa iframe {
+        padding: 20px 0 0 0; }
+    .maincontacto .textocontacto {
+      grid-column: 2/3;
+      grid-row: 8/9;
+      padding: 0;
+      justify-self: center;
+      text-align: center; } }
 
 @media (max-width: 768px) {
   header .navbar {
@@ -303,7 +332,24 @@ main {
       width: 300px;
       height: 300px; }
   .sectionresenas .resena1, .sectionresenas .resena2, .sectionresenas .resena3 {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .maincontacto {
+    display: grid;
+    grid-template-columns: auto 400px auto;
+    grid-template-rows: 100px repeat(7, 1fr); }
+    .maincontacto .mapa iframe {
+      padding: 10px 0 0 0;
+      width: 350px;
+      height: 400px; }
+    .maincontacto .imagenlocalcontacto img {
+      width: 360px;
+      height: 330px;
+      padding: 0; }
+    .maincontacto .sectioncontacto fieldset label span {
+      margin: 15px;
+      font-size: 15px; }
+    .maincontacto .sectioncontacto fieldset label #Mensaje {
+      padding: 50px; } }
 
 @media (max-width: 425px) {
   .navbar {
@@ -329,7 +375,21 @@ main {
   .sectionresenas .resena1, .sectionresenas .resena2, .sectionresenas .resena3 {
     font-size: 12px; }
   .h2resenas {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .maincontacto {
+    display: grid;
+    grid-template-columns: auto 350px auto; }
+    .maincontacto .mapa iframe {
+      width: 330px;
+      height: 380px; }
+    .maincontacto .imagenlocalcontacto img {
+      width: 330px;
+      height: 300px; }
+    .maincontacto .sectioncontacto fieldset label span {
+      margin: 10px;
+      font-size: 11px; }
+    .maincontacto .sectioncontacto fieldset label #Mensaje {
+      padding: 30px; } }
 
 @media (max-width: 375px) {
   .logoredes {
@@ -349,4 +409,18 @@ main {
         width: 200px;
         height: 200px; }
   .sectionresenas .resena1, .sectionresenas .resena2, .sectionresenas .resena3 {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .maincontacto {
+    display: grid;
+    grid-template-columns: auto 300px auto; }
+    .maincontacto .mapa iframe {
+      width: 300px;
+      height: 350px; }
+    .maincontacto .imagenlocalcontacto img {
+      width: 280px;
+      height: 300px; }
+    .maincontacto .sectioncontacto fieldset label span {
+      margin: 10px;
+      font-size: 10px; }
+    .maincontacto .sectioncontacto fieldset label #Mensaje {
+      padding: 15px; } }
