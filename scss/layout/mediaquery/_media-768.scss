@@ -13,23 +13,25 @@
     }
     .sectionindex {
         background-position: center center;
-    }
-
-    .textochico {
-        grid-column: 2/6;
-        grid-row: 2/5;
-        font-size: 30px;
-        padding: 10px;
-        align-self: center;
-        padding: 20px;
+        .textochico {
+            grid-column: 2/6;
+            grid-row: 2/5;
+            font-size: 30px;
+            padding: 10px;
+            align-self: center;
+            padding: 20px;
+        }
     }
     
-    .textogrande {
-        font-size: 25px;
+    .sectionindex2{
+        .textogrande {
+            font-size: 25px;
+        }
     }
-
+    
     .redes {
         gap: 50px;
+        padding-top: 40px;
     }
 
     .imgnosotros {
@@ -51,15 +53,12 @@
         }
     }
     .sectionresenas {
-        
-        .resena1, .resena2, .resena3 {
-            font-size: 13px;
+            .resena1, .resena2, .resena3 {
+                font-size: 13px;
             }
     }
     .maincontacto {
-        display: grid;
-        grid-template-columns: auto 400px auto;
-        grid-template-rows: 100px repeat(7,1fr);
+        @include grid (100px repeat(7,1fr), auto 400px auto, none, none);
             .mapa {
                 iframe {
                 padding: 10px 0 0 0;

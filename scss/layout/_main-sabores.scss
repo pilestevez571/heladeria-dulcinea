@@ -2,9 +2,7 @@
     background-color: white;
 
     .sectionsabores {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,780px);
+        @include grid (repeat(2,780px),repeat(2,1fr), none, none);
         gap: 20px;
         justify-items: center;
 

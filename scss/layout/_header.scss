@@ -9,13 +9,11 @@ header {
     }
 
     .navbar {
+        @include flex (row,nowrap,none,space-between);
         font-family: 'Inter', sans-serif;
         list-style: none;
         padding-top: 70px;
         padding-right: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         gap: 30px;
         font-size: 23px;
         color: $paletadecolor1;

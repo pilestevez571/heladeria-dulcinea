@@ -13,11 +13,9 @@ main {
 }
 .sectionindex {
         background-image: url(../assets/img/index.jpg);
-        display: grid;
+        @include grid (repeat(6,1fr), repeat(6,1fr), none, none);
         height: 900px;
-        grid-template-rows: repeat(6,1fr);
-        grid-template-columns: repeat(6,1fr);
-
+        
         .textochico {
                 grid-column: 2/6;
                 grid-row: 2/6;
@@ -31,11 +29,8 @@ main {
         }
 }
 
-
 .sectionindex2 {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        @include flex (row,wrap,none,center);
         margin-bottom: 200px;
 
         .textogrande {
@@ -43,7 +38,7 @@ main {
                 text-align: center;
                 font-size: 40px;
                 color: $paletadecolor1;
-                padding: 70px;
+                padding: 60px 0 0 0;
         }
 }
 

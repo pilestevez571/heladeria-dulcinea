@@ -1,10 +1,8 @@
 
 .maincontacto {
     background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(8,100px);
-
+    @include grid (repeat(8,100px), repeat(2,1fr), none, none);
+    
     .titulocontacto {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -16,10 +14,8 @@
         
         fieldset {
             border: none;
-            display: flex;
-            flex-direction: column;
-            justify-content:flex-start;
-            
+            @include flex (column, nowrap,none,flex-start);
+                        
             label {
                 color: $paletadecolor1;
 

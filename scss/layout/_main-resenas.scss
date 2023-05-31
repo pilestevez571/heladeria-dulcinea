@@ -1,20 +1,18 @@
 .sectionresenas {
     background-image: url(../assets/img/fotoreseña.jpg);
+    @include grid (repeat(8,1fr), repeat(10,1fr), none, none);
     background-size: cover;
     height: 600px;
     margin-bottom: 200px;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(8,1fr);
-    
-    
-    .resena1, .resena2, .resena3 {
+        
+    .resena1 {
+        grid-column: 2/4;
+        grid-row: 2/8;
         background-color: $paletadecolor1;
         font-family: "Inter", sans-serif;
         color: white;
         padding: 30px;
         border-radius: 20px;
-        grid-row: 2/8;
         text-align: center;
         font-size: 20px;
         align-self: center;
@@ -25,16 +23,15 @@
                 padding-top: 10px;
             }
     }
-    .resena1 {
-        grid-column: 2/4;
-    }
     
     .resena2 {
+        @extend .resena1;
         grid-column: 5/7;
         font-size: 18px;
     }
     
     .resena3 {
+        @extend .resena1;
         grid-column: 8/10;
     }
 }
@@ -50,5 +47,6 @@
 
     .anclaresenas {
         margin-left: 10px;
+        color: $paletadecolor1;
     }
 }

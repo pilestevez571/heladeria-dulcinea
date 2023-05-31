@@ -1,9 +1,7 @@
 @media (max-width: 1024px) {
     
     header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (column,nowrap,center,none)
     }
 
     .logo {
@@ -28,16 +26,11 @@
 
     .mainsabores {
         .sectionsabores {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4,700px);
-            justify-items: center;
-            align-items: center;
-
+            @include grid (repeat(4,700px),1fr,center,center);
+            
             .cardcremas, .cardfrutales, .cardsinazucar, .cardespeciales { 
                 width: 420px;
                 height: 700px;
-
             }
 
             .cardcremas {
@@ -60,12 +53,9 @@
     }
     
     .sectionresenas {
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(12,1fr);
-
+        @include grid (repeat(12,1fr), repeat(6,1fr), none, none);
+        
         .resena1, .resena2, .resena3 {
-            display: grid;
             grid-column: 2/6;
             margin: 0;
             align-self: center;
@@ -86,10 +76,8 @@
     }
 
     .maincontacto {
-        display: grid;
-        grid-template-columns: auto 500px auto;
-        grid-template-rows: 100px repeat(7,1fr);
-
+        @include grid (100px repeat(7,1fr), auto 500px auto, none, none);        display: grid;
+        
         .titulocontacto {
             grid-column: 2/3;
             grid-row: 1/2;
