@@ -224,17 +224,25 @@ main {
     .mainsabores .sectionsabores .cardcremas {
       grid-column: 1/2;
       grid-row: 1/2; }
+      .mainsabores .sectionsabores .cardcremas:hover {
+        transform: scale(1.1, 1.1); }
     .mainsabores .sectionsabores .cardfrutales {
       grid-column: 2/3;
       grid-row: 1/2; }
+      .mainsabores .sectionsabores .cardfrutales:hover {
+        transform: scale(1.1, 1.1); }
     .mainsabores .sectionsabores .cardsinazucar {
       grid-column: 1/2;
       grid-row: 2/3;
       margin-top: 20px; }
+      .mainsabores .sectionsabores .cardsinazucar:hover {
+        transform: scale(1.1, 1.1); }
     .mainsabores .sectionsabores .cardespeciales {
       grid-column: 2/3;
       grid-row: 2/3;
       margin-top: 20px; }
+      .mainsabores .sectionsabores .cardespeciales:hover {
+        transform: scale(1.1, 1.1); }
 
 @media (max-width: 1024px) {
   header {

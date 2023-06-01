@@ -23,7 +23,6 @@
                 font-family: 'IBM Plex Mono', monospace;
                 font-weight: lighter;
                 padding-left: 20px;
-                
             }
 
             ul {
@@ -32,29 +31,40 @@
                 line-height: 25px;
                 padding-left: 20px;
             }
-            
-        }       
-        
+        }
+
         .cardcremas {
             grid-column: 1/2;
             grid-row: 1/2;
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
         }
 
         .cardfrutales {
             grid-column: 2/3;
             grid-row: 1/2;
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
         }
     
         .cardsinazucar {
             grid-column: 1/2;
             grid-row: 2/3;
             margin-top: 20px;
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
         }
     
         .cardespeciales {
             grid-column: 2/3;
             grid-row: 2/3;
             margin-top: 20px;
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
         }
-    }
+    }       
 }
